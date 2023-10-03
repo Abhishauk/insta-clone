@@ -4,8 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-
 header{
     display: flex;
     margin-top: 30px;
@@ -14,16 +12,13 @@ header{
     border-bottom: 1px solid rgba(219,219,219,1);
     background-color: white;
 }
-
 header .logo{
     height: 29px;       
 }
-
 header .logo img{
     height: 100%;
     object-fit: contain;
 }
-
 header .search-box{
     width: 250px;
     background-color:rgba(239,239,239,1) ;
@@ -34,7 +29,6 @@ header .search-box{
     height: 30px;
 
 }
-
 header .search-box input{
     height: 30px;
     border: none;
@@ -45,7 +39,6 @@ header .search-box input{
     color: #8e8e8e;
 
 }  
-
 header nav ul{
     list-style: none;
     display: flex;
@@ -55,14 +48,49 @@ header nav ul{
 header nav ul li{
     margin-right: 20px;
 }
-
 header nav ul li:last-child{
     margin-right: 0;
 }
-
 header nav ul li a img{
       width: 22px;
       height: 22px;
       border-radius: 50%;
       object-fit: cover;
+}
+header nav ul li a i{
+    font-size: 22px;
+    color: rgba(38,38,38,1);
+}
+section{
+    padding:30px 18%;
+    background-color: #fafafa;
+    display: flex;
+}
+.left-side{
+    width: 65%;
+}
+.story{
+    display:flex;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+}
+.story .stories{
+    width: 17%;
+    
+}
+.story .stories a img{
+    border-radius: 50%;
+    border: 2px solid #c62d8f;
+    padding: 1px;
+    object-fit: cover;
+}
+.story .stories p{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #262626;
+
 }
