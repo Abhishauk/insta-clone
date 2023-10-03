@@ -11,9 +11,10 @@ header{
     padding: 10px 18%;
     border-bottom: 1px solid rgba(219,219,219,1);
     background-color: white;
+    
 }
 header .logo{
-    height: 29px;       
+    height: 45px;       
 }
 header .logo img{
     height: 100%;
@@ -26,7 +27,7 @@ header .search-box{
     display: flex;
     align-items: center;
     border-radius: 8px;
-    height: 30px;
+    height: 45px;
 
 }
 header .search-box input{
@@ -93,4 +94,181 @@ section{
     text-overflow: ellipsis;
     color: #262626;
 
+}
+
+.posts{
+    margin: 25px 0;
+    background-color: white;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+}
+.posts .post-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+}
+.posts .post-title .post-left{
+    display: flex;
+    align-items: center;
+}
+.posts .post-title .post-left .image img{
+     border-radius: 50%;
+     /* object-fit: contain; */
+}
+.posts .post-title .post-left .details .name{
+     padding-bottom: 2px;
+     font-weight: bold;
+     margin-left: 9px;
+}
+.posts .post-title .post-left .details .location{
+    margin-left: 20px;
+}
+
+.posts .post-content img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+.posts .post-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 7px;
+    margin-left: 8px;
+
+}
+.posts .post-footer .like-share-comment i{
+    font-size: 22px;
+    margin-right: 10px;
+}
+.posts .post-footer-content{
+    padding: 0 16px 16px;
+}
+.posts .post-footer-content p{
+    margin-bottom: 3px;
+}
+.posts .post-footer-content .likes{
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+.posts .post-footer-content .name{
+    font-weight: 600;
+}
+.posts .post-footer-content span{
+    margin-left: 10px;
+    font-weight: normal;
+} 
+
+.posts .post-footer-content .posting-time{
+    font-size: 10px;
+    margin-top: 6px;
+
+}
+.posts .add-comment{
+    padding: 16px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.posts add-comment .left-side{
+    display: flex;
+    align-items: center;
+
+}
+.posts .add-comment .left-side i{
+    font-size: 22px;
+    margin-left: 15px;
+}
+.posts .add-comment .left-side input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.right-side{
+    width: 35%;
+    margin-top: 15px;
+    margin-left: 60px;
+    /* position: fixed; */
+
+}
+.right-side .profile-title{
+    display: flex;
+    align-items: center;
+}
+.right-side .profile-title .profile-left{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.right-side .profile-title  .profile-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.right-side .profile-title  .profile-left .details .name{
+    padding-bottom:3px ;
+}
+
+.suggestions{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.suggestions p{
+    margin-right: 41px;
+}
+.suggestion-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.suggestion-title .suggestion-left{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.suggestion-title .suggestion-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.suggestion-title .suggestion-left .deatails .name{
+    padding-bottom: 3px;
+}
+
+
+
+/* media query */
+
+@media  (max-width:992px){
+    header{
+        padding: 10px 20px;
+    }
+    section .left-side{
+        width:100%
+    }
+    section .right-side{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    header .search-box{
+        display: none;
+    }
+    section{
+        padding: 30px 20px;
+    }
+}
+@media(max-width:576px){
+    .story .stories{
+        width: 25%;
+    }
+    header nav ul li{
+        margin-left: 10px;
+    }
 }
